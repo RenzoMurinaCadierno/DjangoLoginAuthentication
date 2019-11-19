@@ -119,7 +119,7 @@ def user_login(request):
         else:
 
             print('Someone tried to log in and failed')
-            print(f'Username: {username} and password {password}')
+            print('Username: {} - Password {}'.format(username, password))
 
             return HttpResponse('Invalid login details')
 
