@@ -14,7 +14,15 @@ It is a similar concept to the one uploaded in 'NodeJSLoginAuthentication' repos
 
 As a first project, I kept it as simple as it could get. Everything is over-commented, sorry for that. It is the way I keep track of stuff when learning :P
 
-Instructions on how to launch it locally
+Check it online
+------------------------------------------
+Go to http://renzomurinacadierno.pythonanywhere.com, it is deployed there.
+
+**Note:** If you happen to see another project instead of this one, then do not worry, it is normal. I often use this address as a test host for my projects. If that is the case, you can either wait some days until I reupload it, or you can launch it locally (next section).
+
+If I move this project to another URL, I will explicitly say so here.
+
+Launch it locally
 ------------------------------------------
 
 - Download 'django-login-authentication' folder or clone the repository. 
