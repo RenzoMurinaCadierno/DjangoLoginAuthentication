@@ -14,7 +14,18 @@ It is a similar concept to the one uploaded in 'NodeJSLoginAuthentication' repos
 
 As a first project, I kept it as simple as it could get. Everything is over-commented, sorry for that. It is the way I keep track of stuff when learning :P
 
-Instructions
+Instructions on how to launch it locally
+------------------------------------------
+
+- Download 'django-login-authentication' folder or clone the repository. 
+
+- Open a console/terminal and access it from there.
+
+- Launch the server instance (python manage.py runserver)
+
+- Open a browser, go to 127.0.0.1/ and there you go.
+
+Instructions on how to use it
 ------------------------------------------
 
 A navbar is displayed at all times, which will have a 'Register' link for you to create your account.
