@@ -1,0 +1,47 @@
+{% extends 'basic_app/base.html' %}
+{% load staticfiles %}
+
+{% block body_block %}
+
+<div class="jumbotron">
+
+  <!-- If the user registered, register would NOT be empty -->
+  {% if registered %}
+
+    <h1> Thank you for registering! </h1>
+
+    <h3>
+      <a href="{% url 'basic_app:user_login' %}">Now, log in.</a>
+    </h3>
+
+  <!-- If they did not register, then we load the registration form -->
+  {% else %}
+
+    <h1> Register here: </h1>
+
+    <h3> Fill out the form: </h3>
+
+    <!-- We want to upload an image, so we need the enctype. -->
+    <!-- > Enctype attribute specifies how the form-data should be -->
+    <!--   encoded when it is sent to the server -->
+    <!-- > multipart/form-data specifies that no characters are encoded. -->
+    <!--   It is required when using forms that have a file upload -->
+    <form enctype="multipart/form-data" method="post">
+
+      {% csrf_token %}
+
+      <!-- Bring up an UserForm() instance from forms.py -->
+      {{ user_form.as_p }}
+
+      <!-- And from the profile form too -->
+      {{ profile_form.as_p }}
+
+      <input type="submit" name="" value="Register">
+
+    </form>
+
+  {% endif %}
+
+</div>
+
+{% endblock %}
